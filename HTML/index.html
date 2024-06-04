@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<title>Lưu Quốc Huy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../CSS/style.css">
+<script src="../JS/script.js"></script>
+
+</head>
+
+
+<!--//////////////////////////////////--->
+<!--//////////////////////////////////--->
+<body>
+
+  
+
+    <!----->
+    <div class="rectangle">
+        <img src="../RES/giphy.gif" alt=""style="width: 100%; height: 100px;">
+       
+
+        
+        <div class="rlogin"id="openPopup" >Login</div>
+        
+        <div id="popup" class="popup">
+            <div class="popup-content">
+               
+                <form>
+                    <label for="name">Tên:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Mật khẩu:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                    <input type="submit" value="Đăng nhập/Đăng kí">
+                  </form>
+            </div>
+        </div>
+
+
+        <div class="inf">
+            <img src="../RES/source.gif" alt=""style="width: 100%;">
+            <p>Bạn chán thuê vệ sĩ?<br>Đi thăm thú chút nhé</p>
+            <a href="index.html">Thuê vệ sĩ</a><br>
+            <a class="current"><a href="thongtin.html">Vũ Trụ</a><br>
+            <a href="dichvu.html">Phong cảnh</a><br>
+        </div>
+
+        
+        <div class="sphare" onclick="moveRectangle()">
+            <div class="setting" style="bottom: 25px; right: 6px"></div>
+            <div class="setting" style="bottom: 17px; right: 6px"></div>
+            <div class="setting" style="bottom: 8px; right: 6px"></div>
+        </div>
+
+
+    </div>
+    
+
+
+
+    <h1><center>THUÊ VỆ SĨ</center></h1>
+    <p>Chào mừng bạn đến với thế giới bí mật của Thuê Một Vệ Sĩ, nơi tinh hoa và nguy hiểm hòa quyện trong bóng tối của không gian mạng. Tại đây, những vệ sĩ hàng đầu cung cấp dịch vụ của họ, bảo vệ bạn trước mọi nguy cơ với sự tinh tế và duyên dáng.
+
+Nền tảng của chúng tôi là minh chứng cho nghệ thuật bảo vệ, nơi mỗi động tác là một nước đi được tính toán trong trận cờ lớn của an ninh. Những vệ sĩ, được bao phủ trong bức màn danh tính, là những bậc thầy trong nghề của mình, có khả năng điều khiển những tình huống phức tạp nhất với sự điềm tĩnh của một nhạc trưởng dày dạn kinh nghiệm.
+
+Tại Thuê Một Vệ Sĩ, chúng tôi hiểu rõ tầm quan trọng của sự tin tưởng và kín đáo. Dịch vụ của chúng tôi được cung cấp với sự tinh xảo nhất, đảm bảo rằng mọi giao dịch đều là một bí ẩn, được giữ kín trong tầng lớp cao nhất của sự riêng tư. Trí thông minh của các nhân viên vận hành chỉ có thể sánh ngang với nguy cơ họ có thể mang lại, một sự cân bằng hài hòa giữa quyền lực và sự kiềm chế.
+
+Hãy bắt đầu hành trình qua mê cung của thời đại số với Thuê Một Vệ Sĩ. Tại đây, sự sáng tạo của trí óc gặp gỡ với sự hồi hộp của cái không biết. Dù là bảo vệ kho báu số của bạn hay điều hướng những phức tạp của internet, các nhân viên của chúng tôi luôn sẵn sàng phục vụ với sự thanh lịch và một chút quyến rũ cấm kỵ mà chỉ thế giới của vệ sĩ mới mang lại được.
+</p>
+
+
+
+<div class="hktb" onclick="toggleAdditionalContent(this)">Vệ sĩ 1</div>
+    <div class="additional-content" onclick="navigateToDetailsPage('dichvu.html')">
+
+    <img src="../RES/amjprxqa.png"style="width: 100px; border-radius: 10px; margin-right: 10px;">
+    <p>Argenti là một hiệp sĩ cổ điển của Hiệp sĩ sắc đẹp. Thẳng thắn và thẳng thắn, người đàn ông cao quý và đáng ngưỡng mộ này lang thang trong vũ trụ một mình,
+        kiên quyết đi theo con đường của cái đẹp.</p>
+    </div>
+
+<div class="hktb" onclick="toggleAdditionalContent(this)">Vệ sĩ 2</div>
+    <div class="additional-content">
+    <img src="../RES/h0qgo46g.png"style="width: 100px; border-radius: 10px; margin-right: 10px;">
+    <p>Agent 47, bức ảnh không màu của sự tàn nhẫn, luôn di chuyển trong bóng tối với sự chính xác của một cỗ máy. Không danh tính, không lịch sử, 
+        anh ta là biểu tượng của sự kiên định, một sát thủ không bao giờ từ bỏ con mồi.</p>
+    </div>
+
+<div class="hktb" onclick="toggleAdditionalContent(this)">Vệ sĩ 3</div>
+    <div class="additional-content">
+    <img src="../RES/v80z5zt8.png"style="width: 100px; border-radius: 10px; margin-right: 10px;">
+    <p>Gojo Satoru, chú thuật sư bí ẩn với đôi mắt nhthấu vũ trụ, nắm giữ sức mạnh vô lượng. Sự hiện diện của anh ta thu hút mọi sự chú ý, hào quang của anh ta không thể chạm tới. 
+        Tuy nhiên, bên dưới vẻ ngoài bất khả chiến bại của anh ta, là một thất bại hiếm hoi - một sự bảo vệ thất bại, một khách hàng nữ đã ra đi vĩnh viễn.</p>
+    </div>
+
+<div class="hktb" onclick="toggleAdditionalContent(this)">Vệ sĩ 4</div>
+    <div class="additional-content">
+    <img src="../RES/z7q78vi8.png"style="width: 100px; border-radius: 10px; margin-right: 10px;">
+    <p>John Wick, người đàn ông của ý chí tuyệt đối, một huyền thoại ẩn mình trong bóng tối. Sự chính xác của anh ấy là thơ, sự báo thù của anh ấy là một nghệ thuật. 
+        Sự phẫn nộ của anh ấy là một cơn lốc, nhưng hãy cẩn thận – một tội lỗi không thể tha thứ? Chú chó yêu quý của anh ta.</p>
+    </div>
+
+
+
+
+<div class="pagination">
+    <a href="#">&lt;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+    <a href="#">&gt;</a>
+</div>
+
+
+
+
+
+<p>Copyright (c) 2042 Lưu Quốc Huy </p>
+
+</body>
+
+</html>
