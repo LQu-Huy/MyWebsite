@@ -36,3 +36,5 @@ document.getElementById('closePopup').addEventListener('click', function() {
 function navigateToDetailsPage(pageUrl) {
 window.location.href = pageUrl;
 }
+
+
