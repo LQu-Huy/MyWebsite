@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-<title>Lưu Quốc Huy</title>
-<link rel="stylesheet" href="../CSS/style.css">
-<script src="../JS/script.js"></script>
+    <title>GunDam Sell</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../RES/favicon_io/favicon.ico">
 
+    <style>
+      
+    </style>
 </head>
-
-
 <body>
-  
-    <div class="rectangle">
-        <img src="../RES/giphy.gif" alt=""style="width: 100%; height: 100px;">
-    
-        <div class="rlogin"id="openPopup" >Login</div>
-        
+
+    <header>
+        <div class="hcn">
+            <a href="index.html"><img src="../RES/mark.jpg" alt="" class="logo"></a>
+
+            <ul class="centered-list">
+                <button class="cta">
+                    <span><a href="#" class="hover-underline-animation">GUNDAM</a></span></button>
+                <button class="cta">
+                    <span><a href="#" class="hover-underline-animation">GEAR</a></span></button>
+                <button class="cta">   
+                    <span><a href="#" class="hover-underline-animation">ACCESSORIES</a></span></button>
+                <button class="cta">      
+                    <span><a href="#" class="hover-underline-animation">SHOP</a></span></button>
+                <button class="cta">        
+                    <span><a href="#" class="hover-underline-animation">TOOL</a></span></button>
+                <button class="cta">            
+                    <span><a href="#" class="hover-underline-animation">ABOUT</a></span></button>
+            </ul>
+            <ul class="list">
+                <li id="openPopup"><img src="../RES/5087579.png" alt="" class="icon"></li>
+                <li><img src="../RES/xztzwbud.png" alt="" class="icon"></li>
+            </ul>
+        </div>
+
         <div id="popup" class="popup">
             <div class="popup-content">
-               
                 <form>
                     <label for="name">Tên:</label><br>
                     <input type="text" id="name" name="name"><br>
@@ -27,71 +48,101 @@
                     <input type="email" id="email" name="email"><br>
                     <label for="password">Mật khẩu:</label><br>
                     <input type="password" id="password" name="password"><br><br>
-                    <input type="submit" value="Đăng nhập/Đăng kí">
+                    <div class="loginbt"><a style="color :rgb(0, 0, 0);">Login</a></div>
                   </form>
             </div>
         </div>
+    </header>
 
-
-        <div class="inf">
-            <img src="../RES/source.gif" alt=""style="width: 100%;">
-            <p>Bạn chán thuê vệ sĩ?<br>Đi thăm thú chút nhé</p>
-            <a href="index.html">Thuê vệ sĩ</a><br>
-            <a class="current"><a href="thongtin.html">Vũ Trụ</a><br>
-            <a href="dichvu.html">Phong cảnh</a><br>
-        </div>
-
-        
-        <div class="sphare" onclick="moveRectangle()">
-            <div class="setting" style="bottom: 25px; right: 6px"></div>
-            <div class="setting" style="bottom: 17px; right: 6px"></div>
-            <div class="setting" style="bottom: 8px; right: 6px"></div>
-        </div>
-
-
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <select>
+            <option value="">Model</option>
+        </select>
+        <select>
+            <option value="">Exterior Color</option>
+        </select>
+        <select>
+            <option value="">Interior Color</option>
+        </select>
+        <button>More Options</button>
     </div>
 
-    <div class="rlogin" id="openPopup" style="position: static; margin-top: 10px;" onclick="window.history.back()">◁ Back</div>
-    
-    <p>Copyright (c) 2042 Lưu Quốc Huy </p>
+    <div class="main-content">
+        <div class="vehicle-card">
+            <img src="../RES/97542088_p0.jpg" alt="Vehicle Image">
+            <p2 class="napc2">Z E T A</p2>
+            <p>Price: $4,990</p>
+            <p>Estimated Delivery: 1-2 weeks</p>
+            <p>High: 15cm</p>
+            <p>Led: Available</p>
+            <p>Material: Steel</p>
+            <button>Order Now</button>
+        </div>
+        <div class="vehicle-card">
+            <img src="../RES/118202824_p0.png" alt="Vehicle Image">
+            <p2 class="napc2">R I G B L A D E</p2>
+            <p>Price: $5,990</p>
+            <p>Estimated Delivery: 1-2 weeks</p>
+            <p>High: 15cm</p>
+            <p>Led: Available</p>
+            <p>Material: Steel, Glass</p>
+            <button>Order Now</button>
+        </div>
+        <div class="vehicle-card">
+            <img src="../RES/119083900_p0.jpg" alt="Vehicle Image">
+            <p2 class="napc2">S I T H X</p2>
+            <p>Price: $2,990</p>
+            <p>Estimated Delivery: 1-2 weeks</p>
+            <p>High: 20cm</p>
+            <p>Led: Available</p>
+            <p>Material: Resin</p>
+            <button>Order Now</button>
+        </div>
+    </div>
 
+    <div class="tabs">
+        <button>All</button>
+        <button>Available Today</button>
+        <button>Near You</button>
+        <button>Coming Soon</button>
+    </div>
 
+    <footer>
+        <div class="feet">
+            <div class="ftex">
+                <p>© 2024 Interia, Inc.
+                All rights reserved.</p>
+            </div>
+            <div class="ftext" style="left: 20%;">
+                <p>Explore</p><p>Home</p><p>About</p><p>Services</p><p>Contact</p>
+            </div>
+            <div class="ftext" style="left: 50%;">
+                <p>Connect</p><p>Instagram</p><p>Twitter</p><p>Facebook</p><p>Linkedln</p>
+            </div>
+            <div class="ftext" style="left: 80%;">
+                <p>Resources</p><p>Blog</p><p>FAQs</p><p>Careers</p><p>Press</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
 <script>
-
-    var inf = document.querySelector('.inf');
-    var movingIn = false; 
-
-    function moveRectangle() {
-        if (!movingIn) {
-            inf.style.left = '0.1%'; 
-        } else {
-            inf.style.left = '-20%';
-        }
-        movingIn = !movingIn; 
-    }
-
     document.getElementById('openPopup').addEventListener('click', function() {
-        document.getElementById('popup').classList.add('active');
-        document.body.style.overflow = 'hidden'; 
-    });
+    document.getElementById('popup').classList.add('active');
+    document.body.style.overflow = 'hidden'; 
+});
 
-    document.getElementById('popup').addEventListener('click', function(event) {
-        if (event.target === this) {
-            document.getElementById('popup').classList.remove('active');
-            document.body.style.overflow = 'auto'; 
-        }
-    });
-
-    document.getElementById('closePopup').addEventListener('click', function() {
+document.getElementById('popup').addEventListener('click', function(event) {
+    if (event.target === this) {
         document.getElementById('popup').classList.remove('active');
         document.body.style.overflow = 'auto'; 
-    });
-
-    function navigateToDetailsPage(pageUrl) {
-    window.location.href = pageUrl;
     }
+});
 
+document.getElementById('closePopup').addEventListener('click', function() {
+    document.getElementById('popup').classList.remove('active');
+    document.body.style.overflow = 'auto'; 
+});
 </script>
-</body>
-
 </html>
